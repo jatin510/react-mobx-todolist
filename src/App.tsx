@@ -5,7 +5,6 @@ import TodoList from './components/TodoList';
 import TodoAdd from './components/TodoAdd';
 
 export function App() {
-  console.log('app');
   return (
     <ChakraProvider theme={theme}>
       <Box maxWidth="8xl" margin="auto" p={5}>

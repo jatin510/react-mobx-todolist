@@ -37,6 +37,12 @@ class Store {
   removeTodo(id: number) {
     this.todos = removeTodo(this.todos, id);
   }
+
+  load(url: string) {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => (this.todos = data));
+  }
 }
 
 const store = new Store();
